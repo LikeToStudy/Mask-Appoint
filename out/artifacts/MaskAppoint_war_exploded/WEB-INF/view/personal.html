@@ -1,0 +1,195 @@
+<!doctype html> 
+<html lang="en" class="no-js"> 
+<head> 
+  <meta charset="utf-8" />
+  <title>个人主页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_personal.css">
+    <script src="libs/jquery-2.2.3.min.js"></script>
+    <script src="assets/js/jquery.particleground.min_personal.js"></script>
+    <script src="assets/js/demo_personal.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap-4.3.1/css/bootstrap.min.css">
+    <script src="libs/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/personal.js"></script>
+    <link rel="stylesheet" href="assets/css/public.css">
+    <script src="assets/js/jquery_flexslider.js"></script>
+
+
+</head>
+
+<body>
+<div id="particles">
+    <div class="intro">
+        <div class="intro-content">
+            <div class="intro-content-left">
+                <div class="intro-content-left-top">
+                    个&nbsp;人&nbsp;中&nbsp;心
+                </div>
+                <div class="intro-content-left-center">
+                    <ul>
+                        <li class="change-color"><a href="javascript:;" id="oneItemIcon">主&nbsp;要&nbsp;信&nbsp;息</a></li>
+                        <li><a href="javascript:;" id="twoItemIcon">修&nbsp;改&nbsp;信&nbsp;息</a></li>
+                        <li><a href="javascript:;" id="threeItemIcon">预&nbsp;约&nbsp;记&nbsp;录</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="intro-content-right">
+                <ul>
+                    <li id="oneItem" class="item-show">
+                        <div class="intro-content-right-top"><span>个人信息</span></div>
+                        <div class="intro-content-right-center">
+                            <div class="intro-content-right-center-left">
+                                <table>
+                                    <tr>
+                                        <td>姓&nbsp;名&nbsp;：</td>
+                                        <td id="userName" align="left"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>性&nbsp;别&nbsp;：</td>
+                                        <td id="userSex" align="left"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>出生日期&nbsp;：</td>
+                                        <td id="userBirth" align="left"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>绑定手机号&nbsp;：</td>
+                                        <td id="userPhone" align="left"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>民&nbsp;族&nbsp;:</td>
+                                        <td id="userNation" align="left"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>收件地址&nbsp;:</td>
+                                        <td id="userAddress" align="left"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>手&nbsp;机&nbsp;号&nbsp;:</td>
+                                        <td id="userPhoneNumber" align="left"></td>
+                                    </tr>
+                                    <tr>
+                                        <td >电子邮箱&nbsp;:</td>
+                                        <td id="userEmail" align="left"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="intro-content-right-center-right">
+                                <div><a href="javascript:;" id="clickChange">点击修改</a></div>
+                                <div><a href="index.html">返回主页</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="twoItem">
+                        <div class="intro-content-right-top"><span>修改信息</span></div>
+                        <div class="intro-content-right-center">
+                            <div class="intro-content-right-center-left two-intro-content-right-center-left">
+                                <table>
+                                    <tr>
+                                        <td>姓&nbsp;名&nbsp;：</td>
+                                        <td align="left"><input type="text" id="changeName" name="changeName" value=""></td>
+                                        <td style="color: red;width: 1%;">*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>性&nbsp;别&nbsp;：</td>
+                                        <td align="left"><input type="text" id="changeSex" name="changeSex" value=""></td>
+                                        <td style="color: red;width: 1%;">*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>出生日期&nbsp;：</td>
+                                        <td align="left"><input type="text" id="changeBirth" name="changeBirth" placeholder="例如: 1999-01-01" value=""></td>
+                                        <td style="color: red;width: 1%;">*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>绑定手机号&nbsp;：</td>
+                                        <td align="left"><input type="text" id="changePhone" name="changePhone" value=""></td>
+                                        <td style="color: red;width: 1%;">*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>民&nbsp;族&nbsp;:</td>
+                                        <td align="left"><input type="text" id="changeNation" name="changeNation" value=""></td>
+                                        <td style="color: red;width: 1%;">*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>收件地址&nbsp;:</td>
+                                        <td align="left"><input type="text" id="changeAddress" name="changeAddress" value=""></td>
+                                        <td style="color: red;width: 1%;">*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>手&nbsp;机&nbsp;号&nbsp;:</td>
+                                        <td align="left"><input type="text" id="changePhoneNumber" name="changePhoneNumber" value=""></td>
+                                        <td style="color: red;width: 1%;">*</td>
+                                    </tr>
+                                    <tr>
+                                        <td >电子邮箱&nbsp;:</td>
+                                        <td align="left"><input type="text" id="changeEmail" name="changeEmail" value=""></td>
+                                        <td style="width: 1%;"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="intro-content-right-center-right">
+                                <span class="tips">(*标记不能为空)</span>
+                                <div><a href="javascript:;" id="confirmChange">确认修改</a></div>
+                                <div><a href="index.html">返回主页</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="threeItem">
+                        <div class="intro-content-right-top-three"><span>预约记录</span></div>
+                        <div class="intro-content-right-center-three">
+                            <div class="slides-content wow zoomIn" style="width:100%; height:100%; padding:0; margin:0;visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">
+                                <div class="about-history" id="fzlc">
+                                    <div class="about-history-list wow zoomIn" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">
+                                        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                                            <ul class="slides clearfix list" id="slidesDocker" style="width: 2600%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+                                            </ul>
+                                        </div>
+                                        <ul class="flex-direction-nav">
+                                            <li class="flex-nav-prev" style="margin-left: -100px"><a class="flex-prev" href="#" id="leftShow">&lt;</a></li>
+                                            <li class="flex-nav-next" style="margin-right: -100px"><a class="flex-next" href="#" id="rightShow">&gt;</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var trigger = $('.hamburger'),
+            overlay = $('.overlay'),
+            isClosed = false;
+
+        trigger.click(function () {
+            hamburger_cross();
+        });
+
+        function hamburger_cross() {
+
+            if (isClosed == true) {
+                overlay.hide();
+                trigger.removeClass('is-open');
+                trigger.addClass('is-closed');
+                isClosed = false;
+            } else {
+                overlay.show();
+                trigger.removeClass('is-closed');
+                trigger.addClass('is-open');
+                isClosed = true;
+            }
+        }
+
+        $('[data-toggle="offcanvas"]').click(function () {
+            $('#wrapper').toggleClass('toggled');
+        });
+    });
+</script>
+
+
+</body> 
+</html> 

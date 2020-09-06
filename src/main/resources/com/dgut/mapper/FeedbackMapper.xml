@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dgut.mapper.FeedbackMapper">
+<!--创建com.dgut.mapper包时，应输入包名 com/dgut/mapper-->
+    <!--select-->
+<!--
+    <select id="getUIDByUsername" resultType="String" parameterType="String">
+        select user_id from user where username=#{username}
+    </select>
+
+    <select id="getUIDByUserInfo" resultType="String" parameterType="String">
+        select user_id from user where username=#{param1} and password=#{param2}
+    </select>
+
+-->
+
+    <!--insert-->
+    <insert id="insertMessage" parameterType="com.dgut.domain.Message">
+        INSERT INTO message VALUES(#{mesID}, #{mesContent})
+    </insert>
+
+    <insert id="insertContact" parameterType="com.dgut.domain.Contact">
+        INSERT INTO contact VALUES(#{contactID}, #{contactName},#{contactUserName}
+        , #{contactEmail}, #{contactPhone}, #{contactMessage})
+    </insert>
+</mapper>

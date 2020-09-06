@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+	<title>联系我们</title>
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="assets/fonts/Lato/Lato.css">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="assets/fonts/webfont/css/materialdesignicons.min.css">
+
+	<!-- Libs -->
+	<link rel="stylesheet" href="libs/bootstrap-4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/select2/css/select2.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+
+	<!-- Theme -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<meta name="theme-color" content="#ECECEC">
+
+	<script src="assets/js/my-all.js"></script>
+
+</head>
+<body>
+
+	<header class="page-header" style="border-bottom: none">
+		<div class="container">
+			<div class="top-bar row align-items-center">
+				<div class="search col-lg-4">
+					<div class="form-search-toggle js-open-search">
+						<i class="search-icon flaticon-magnifying-glass-browser fi-2x"></i>
+						<span>搜&nbsp;&nbsp;索</span>
+					</div>
+					<div id="js-open-mob-menu" class="mob-menu-toggle">
+						<span>Menu</span> <i class="flaticon-menu-options fi-2x"></i>
+					</div>
+				</div>
+
+				<div class="logo col-lg-4">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+
+				<div class="quick-access-menu col-lg-4">
+					<div class="quick-access__item" style="display: block;padding-right: 70px">
+						<div class="header-mini-cart">
+							<a href="login.html" class="mini-cart-link">
+								<i class="cart__icon flaticon-messenger-user-avatar fi-2x"></i>
+							</a>
+						</div>
+					</div>
+					<div class="quick-access__item" id="loginnow" style="display: none;">
+						<div class="header-mini-cart">
+							<a href="javascript:;" class="mini-cart-link">
+								<i class="cart__icon flaticon-messenger-user-avatar fi-2x"></i>
+								<span class="mini-cart-link__qty" style="line-height: 10px;margin-top: 10px;color: #999999" id="username">赖&nbsp;志&nbsp;安</span>
+							</a>
+							<div class="mini-cart">
+								<div class="mini-cart__content">
+									<div class="empty-message">不&nbsp;再&nbsp;继&nbsp;续&nbsp;看&nbsp;看&nbsp;口&nbsp;罩&nbsp;吗&nbsp;？</div>
+									<a href="personal.html" class="btn btn-primary btn-lg mini-cart__btn">个&nbsp;人&nbsp;中&nbsp;心</a>
+								</div>
+								<div class="mini-cart__footer">
+									<div class="icon-box icon-box-left justify-content-center">
+										<div class="icon-box__icon"><span style="background: url(images/exit.png);background-size: 25px;width: 25px;height: 25px;display:inline-block;margin-top: 8px"></span></div>
+										<div class="icon-box__title"><a href="javascript:;" id="signOut">退&nbsp;出</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav class="header-navigation">
+				<button class="mob-menu-close" id="js-close-mob-menu">
+					<span>Close</span>
+					<i class="flaticon-cancel-button"></i>
+				</button>
+
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link homepage active" href="index.html">主页</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="promo.html">展示</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">关于</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">联系</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="page-wrap">
+
+		<!-- Breadcrumbs -->
+		<nav aria-label="breadcrumb" class="page-breadcrumb">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">主&nbsp;页</a></li>
+					<li class="breadcrumb-item active" aria-current="page">联&nbsp;系</li>
+				</ol>
+			</div>
+		</nav>
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+			<section class="section-contact-form">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-6 col-md-8 text-center">
+							<h2 class="h3 mb-40">联&nbsp;系&nbsp;我&nbsp;们</h2>
+
+							<div id="messagesInfo" class="contact-form">
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" id="contactName" name="contactName" placeholder="真&nbsp;实&nbsp;姓&nbsp;名">
+									</div>
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" id="contactUsername" name="contactUsername" placeholder="用&nbsp;户&nbsp;名">
+
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" id="contactEmail" name="contactEmail" placeholder="电&nbsp;子&nbsp;邮&nbsp;箱">
+									</div>
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" id="contactPhone" name="contactPhone" placeholder="电&nbsp;话&nbsp;号&nbsp;码">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<textarea rows="5" class="form-control" name="contactMessage" id="contactMessage" placeholder="你&nbsp;的&nbsp;信&nbsp;息"></textarea>
+								</div>
+
+								<div class="form-submit mt-3">
+									<input type="submit" id="submitBtn" class="btn btn-primary btn-lg btn-block" value="发&nbsp;送" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div>&nbsp;</div>
+	<div>&nbsp;</div>
+
+	<footer class="page-footer">
+		<div class="container">
+			<div class="foot-info row">
+				<div class="col-md-8">
+					<div class="d-lg-flex align-items-end text-center text-md-left">
+						<a href="/" class="logo-footer">
+							<img src="images/logo-white.png" alt="">
+						</a>
+						<div class="ml-lg-4 page-footer__text" style="line-height: 55px">为&nbsp;了&nbsp;更&nbsp;加&nbsp;方&nbsp;便&nbsp;的&nbsp;进&nbsp;行&nbsp;口&nbsp;罩&nbsp;预&nbsp;约</div>
+					</div>
+				</div>
+
+				<div class="social col-md-4" style="margin-top: 8px">
+					<span>Follow us:</span>
+					<ul class="social-links ml-md-3">
+						<li><a href="#"><i class="mdi mdi-qq" style="background:url(images/qq.png);width: 16px;height: 16px;background-size: 16px"></i></a></li>
+						<li><a href="#"><i class="mdi mdi-wechat" style="background: url(images/WeChat.png);width: 16px;height: 16px;background-size: 16px"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div>&nbsp;</div>
+			<nav class="footer-navigation">
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link homepage active" href="index.html">主页</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="promo.html">展示</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">关于</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">联系</a>
+					</li>
+				</ul>
+			</nav>
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
+
+		</div>
+	</footer>
+
+	<div id="js-back-to-top" class="back-to-top"><i class="flaticon-up-arrow-sign"></i> Page top</div>
+
+	<div class="full-search-wrap">
+		<div class="full-search container">
+			<div class="close-s float-right js-close-search flaticon-cancel-button fi-2x" id="closeIcon"></div>
+			<div class=" search-full-form" id="searchDocker">
+				<div class="position-relative" style="border-bottom: 1px solid #666666">
+					<i class="search-icon flaticon-magnifying-glass-browser fi-2x" id="searchIcon"></i>
+					<input type="text" id="s-full" class="search-full-form__input" placeholder="Search" style="margin-left: 20px">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Libs -->
+	<script src="libs/jquery-2.2.3.min.js"></script>
+	<script src="libs/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+	<script src="libs/select2/js/select2.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+
+
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/contact.js"></script>
+	<script src="assets/js/my-all.js"></script>
+
+</body>
+</html>

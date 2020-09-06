@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom right, #C2C4B6 50%, #DADADA 50%);
+    height: 100%;
+    overflow: hidden;
+}
+#content{
+    width: 53rem;
+    height: 48rem;
+    margin: 10rem auto;
+    background: #A9A9A9;
+    border-radius: 1px;
+    opacity: 0.8;
+    font-weight: bold;
+    z-index: 100;
+}
+#content .content-header{
+    width: 100%;
+    height: 7rem;
+}
+#content .content-header a{
+    width: 50%;
+    height: 100%;
+    line-height: 7rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#content .content-header .unCurr{
+    background: #808080;
+}
+#content .content-header a:first-child{
+    float: left;
+}
+#content .content-header a:last-child{
+    float: right;
+}
+#content .content-content{
+    width: 90%;
+    height: 20rem;
+    margin: 5rem auto 0 auto;
+}
+#content .box{
+    display: none;
+}
+#content .show{
+    display: block;
+}
+#content .content-content div{
+    width: 100%;
+    height: 50%;
+    margin-top: 2rem;
+    text-align: center;
+}
+#content .content-content div:last-child{
+    margin-top: 0rem;
+}
+#content .content-content div input{
+    border: none;
+    width: 90%;
+    height: 5rem;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    font-size: 1.6rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 99%, #fff 4%);
+    color: #FFFFFF;
+    font-weight: bold;
+}
+#content .content-middle{
+    width: 82%;
+    height: 3rem;
+    margin: 0 auto 0rem auto;
+    color: rgba(255,255,255,.5);
+}
+#content .content-middle div{
+    font-size: 1.6rem;
+}
+#content .content-middle div:first-child{
+    float: left;
+}
+#content .content-middle div:first-child:hover{
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+}
+#content .content-middle div:last-child{
+    float: right;
+}
+#content .content-middle div:last-child:hover{
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+}
+#content .content-footer{
+    width: 65%;
+    height: 5rem;
+    margin: 4rem auto 0 auto;
+}
+#content .content-footer input{
+    border: none;
+    width: 12rem;
+    height: 90%;
+    font-size: 1.6rem;
+    color: #ffffff;
+    background: #C0C0C0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+#content .content-footer input:first-child{
+    float: left;
+}
+#content .content-footer input:last-child{
+    float: right;
+}
+
+@keyframes animation1{
+    from{
+        transform: translateY(-100px) rotate(1deg);
+    }
+    to{
+        transform: translateY(-1000px) rotate(360deg);
+    }
+}

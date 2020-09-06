@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/encapsulation_animation.js"></script>
+    <script src="assets/js/login.js"></script>
+
+
+</head>
+<body>
+    <div id="content">
+        <div class="content-header">
+            <a index="1" href="javascript:;">我要登录</a>
+            <a index="2" class="unCurr" href="javascript:;">我要注册</a>
+        </div>
+        <div class="box show">
+            <form id="loginInfo">
+                <div class="content-content">
+                    <div><input type="text" id="userName" name="userName" placeholder="帐号"></div>
+                    <div><input type="password" id="passWord" name="passWord" placeholder="密码"></div>
+                </div>
+            </form>
+            <div class="content-footer">
+                <input type="submit" id="submitBtn" value="登&nbsp录">
+                <input type="reset" id="resetBtn" value="清&nbsp空">
+            </div>
+        </div>
+        <div class="box">
+            <form action="" id="registerInfo">
+                <div class="content-content">
+                    <div><input type="text" id="registerUserName" name="registerUserName" placeholder="帐号"></div>
+                    <div><input type="password" id="registerPassWord" name="registerPassWord" placeholder="密码"></div>
+                </div>
+            </form>
+            <div class="content-footer">
+                <input type="submit" id="submitBtnRegister" value="注&nbsp册">
+                <input type="reset" id="resetBtnRegister" value="清&nbsp空">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
